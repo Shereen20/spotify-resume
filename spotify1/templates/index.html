@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shereen Anand | Spotify Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/spotify-logo.png') }}" alt="Spotify-style logo" class="spotify-logo">
+        <h1>Shereen Anand</h1>
+        <p class="subtitle">Software Engineering Intern | ML & AI Enthusiast</p>
+        <div class="contact-info">
+            <a href="mailto:anandshereen57@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+919611695292"><i class="fas fa-phone"></i> +91 6366009990</a>
+            <a href="https://www.linkedin.com/in/shereen-a-697036249/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://leetcode.com/u/Poseidon201103/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <section class="section">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="experience-item">
+                    <h3>Pegasystems – Software Engineering Intern</h3>
+                    <p class="date">Summer 2024</p>
+                    <ul>
+                        <li>Developed backend solutions in Java, optimizing API response times by 35%</li>
+                        <li>Designed scalable microservices architecture, improving system reliability by 15%</li>
+                        <li>Automated CI/CD pipelines using Jenkins, Docker, and Kubernetes</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Credflow – Software Engineering Intern</h3>
+                    <p class="date">Fall 2024</p>
+                    <ul>
+                        <li>Implemented microservices using Python and FastAPI for invoice financing</li>
+                        <li>Developed Redis caching layer improving data retrieval by 50%</li>
+                        <li>Built real-time analytics dashboards with React.js and PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Groww – Data Scientist Intern</h3>
+                    <p class="date">Summer 2023</p>
+                    <ul>
+                        <li>Built predictive models to enhance personalized investment recommendations</li>
+                        <li>Optimized financial forecasting models using historical transaction data, improving prediction accuracy by 20%</li>
+                        <li>Developed data pipelines for analyzing large-scale financial trends using Python and SQL</li>
+                    </ul>
+                </div>
+
+                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+                <div class="project-item">
+                    <h3>Mood Ring - Emotional Playlist Generator</h3>
+                    <p class="date">Oct 2023 – Dec 2023</p>
+                    <ul>
+                        <li>Built an innovative emotion-detection system using facial recognition and custom CNN architecture</li>
+                        <li>Developed real-time playlist generation based on detected mood using Spotify API and emotion-music mapping</li>
+                        <li>Created seamless integration with user's Spotify library for instant playlist creation and sharing</li>
+                        <li>Implemented feature to detect multiple faces in group settings and generate collaborative playlists</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>AI-Powered Music Recommendation System</h3>
+                    <p class="date">May 2024 – Sept 2024</p>
+                    <ul>
+                        <li>Developed a collaborative and content-based filtering algorithm using matrix factorization and neural networks</li>
+                        <li>Integrated Spotify API to fetch real-time song metadata, enabling personalized music suggestions</li>
+                        <li>Optimized backend caching strategies with Redis, reducing recommendation latency by 40%</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>AI-Powered Personalized Ad Targeting</h3>
+                    <p class="date">Jan 2024 – Mar 2024</p>
+                    <ul>
+                        <li>Developed an AI-driven contextual advertising system to enhance ad relevance for Spotify users</li>
+                        <li>Leveraged deep reinforcement learning to dynamically adjust ad placement based on user preferences</li>
+                        <li>Achieved a 25% improvement in engagement rates through optimized targeting strategies</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Real-Time Song Popularity Forecasting</h3>
+                    <p class="date">Jan 2024 – Mar 2024</p>
+                    <ul>
+                        <li>Built a predictive model using time-series forecasting (LSTMs, Prophet) to estimate song popularity trends</li>
+                        <li>Collected and processed Spotify streaming data for real-time analytics</li>
+                        <li>Visualized insights using D3.js and integrated predictions with an interactive dashboard</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section class="section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-item">
+                    <h3>PES University, Bangalore</h3>
+                    <p>B.Tech in Computer Science and Engineering</p>
+                    <p>Sept 2022 – Jul 2026</p>
+                    <p class="highlight">CGPA: 4.0/5.0</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Programming Languages</h4>
+                        <p>Python, C++, JavaScript, TypeScript, SQL, MATLAB, R</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Machine Learning & AI</h4>
+                        <p>Recommender Systems, Deep Learning, Reinforcement Learning, Transfer Learning, NLP, Generative AI (GANs, VAEs)</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Data Science & Analytics</h4>
+                        <p>A/B Testing, Predictive Modeling, Statistical Analysis, Time Series Forecasting</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Distributed Systems & Cloud</h4>
+                        <p>Apache Kafka, Spark, Kubernetes, Docker, AWS, Google Cloud</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Software Development</h4>
+                        <p>Full-Stack Development (React.js, Node.js, Express.js), API Design, Microservices Architecture</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Tools & Frameworks</h4>
+                        <p>TensorFlow, PyTorch, Scikit-learn, OpenCV, Pandas, NumPy, SciPy, Plotly, Tableau</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-trophy"></i> Awards & Achievements</h2>
+                <ul class="awards-list">
+                    <li>ACM ICPC Regional Finalist (2022)</li>
+                    <li>Smart India Hackathon Finalist (2023)</li>
+                    <li>Microsoft Imagine Cup National Finalist (2024)</li>
+                    <li>Hack the North - Top 50 Best AI Solutions (2024)</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-users"></i> Extracurricular Activities</h2>
+                <div class="extracurricular-item">
+                    <h3>Club Head – MahilAI</h3>
+                    <ul>
+                        <li>Led workshops and bootcamps for women in AI</li>
+                        <li>Established industry mentorship programs</li>
+                        <li>Grew membership by 50%</li>
+                        <li>Partnered with AI firms for internships</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-headphones-alt"></i> Favorite Artists</h2>
+                <div class="artists-list">
+                    <div class="artist-card" data-artist="Radiohead">Radiohead</div>
+                    <div class="artist-card" data-artist="Daft Punk">Kanye West</div>
+                    <div class="artist-card" data-artist="Kendrick Lamar">Kendrick Lamar</div>
+                    <div class="artist-card" data-artist="Hans Zimmer">Hans Zimmer</div>
+                    <div class="artist-card" data-artist="Hans Zimmer">The Weekend</div>
+                    <div class="artist-card" data-artist="Hans Zimmer">BTS</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
